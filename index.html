@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div class="search">
+        <img
+          src="./icons8-search-30.png"
+          alt=""
+          id="search"
+          style="width: 16px"
+          class="icon"
+        />
+        <h1 class="h1">Weather App</h1>
+        <input
+          type="search"
+          id="locationinput"
+          placeholder="Enter Your City Name"
+        />
+      </div>
+
+      <div class="weather_box">
+        <!-- <span>City: </span> <span id="city"></span> -->
+        <img src="" alt="" />
+        <div class="box">
+          <div class="info-weather">
+            <div class="weather">
+              <br />
+              <p id="temperature" class="temperature"></p>
+              <span class="span" style="display: none">°C</span>
+              <br />
+              <p id="description" class="description"></p>
+            </div>
+          </div>
+        </div>
+        <!-- <img src="./clear-sky.png" alt="" style="width: 20%;" > -->
+      </div>
+
+      <div class="weather_details">
+        <div class="humidity">
+          <img
+            src="./wave.png"
+            alt=""
+            class="img-details"
+            id="hum-img"
+            style="display: none"
+          />
+          <div class="info-humidity" style="margin-bottom: -16px">
+            <span class="hum"></span>
+            <div class="text">
+              <p style="display: none" class="hum-p">humidity</p>
+            </div>
+          </div>
+          <!-- <i class="fa-solid fa-water"></i> -->
+        </div>
+
+        <div class="wind_speed" class="img-details">
+          <img src="./mist.png" alt="" style="display: none" id="tum-img" />
+          <div class="info-humidity" id="info-humidity">
+            <span class="tum"></span>
+            <div class="text">
+              <p style="display: none" class="tum-p">windSpeed</p>
+            </div>
+          </div>
+          <!-- <p>windSpeed</p> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
